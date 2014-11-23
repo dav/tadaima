@@ -15,6 +15,15 @@
 		574CDC331A21560500EEB5C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574CDC311A21560500EEB5C2 /* LaunchScreen.xib */; };
 		574CDC3F1A21560500EEB5C2 /* TadaimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDC3E1A21560500EEB5C2 /* TadaimaTests.swift */; };
 		574CDC491A21612E00EEB5C2 /* TadaimaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */; };
+		579C23331A22433100BCD2C2 /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C23321A22433100BCD2C2 /* Gimbal.framework */; };
+		579C23351A22438100BCD2C2 /* GimbalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C23341A22438100BCD2C2 /* GimbalManager.swift */; };
+		579C23381A22492A00BCD2C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C23371A22492A00BCD2C2 /* SystemConfiguration.framework */; };
+		579C233A1A224A7E00BCD2C2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C23391A224A7E00BCD2C2 /* CoreBluetooth.framework */; };
+		579C233C1A224A8700BCD2C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C233B1A224A8700BCD2C2 /* CoreLocation.framework */; };
+		579C233E1A224A8E00BCD2C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C233D1A224A8E00BCD2C2 /* CoreData.framework */; };
+		579C23401A224A9600BCD2C2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C233F1A224A9600BCD2C2 /* libz.dylib */; };
+		579C23421A224A9F00BCD2C2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C23411A224A9F00BCD2C2 /* MapKit.framework */; };
+		579C23441A224AAC00BCD2C2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C23431A224AAC00BCD2C2 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,16 @@
 		574CDC3D1A21560500EEB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		574CDC3E1A21560500EEB5C2 /* TadaimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TadaimaTests.swift; sourceTree = "<group>"; };
 		574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TadaimaManager.swift; sourceTree = "<group>"; };
+		579C23321A22433100BCD2C2 /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gimbal.framework; sourceTree = "<group>"; };
+		579C23341A22438100BCD2C2 /* GimbalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalManager.swift; sourceTree = "<group>"; };
+		579C23361A2245BD00BCD2C2 /* Tadaima-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tadaima-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		579C23371A22492A00BCD2C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		579C23391A224A7E00BCD2C2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		579C233B1A224A8700BCD2C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		579C233D1A224A8E00BCD2C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		579C233F1A224A9600BCD2C2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		579C23411A224A9F00BCD2C2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		579C23431A224AAC00BCD2C2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579C23441A224AAC00BCD2C2 /* Security.framework in Frameworks */,
+				579C23421A224A9F00BCD2C2 /* MapKit.framework in Frameworks */,
+				579C23401A224A9600BCD2C2 /* libz.dylib in Frameworks */,
+				579C233E1A224A8E00BCD2C2 /* CoreData.framework in Frameworks */,
+				579C233C1A224A8700BCD2C2 /* CoreLocation.framework in Frameworks */,
+				579C233A1A224A7E00BCD2C2 /* CoreBluetooth.framework in Frameworks */,
+				579C23381A22492A00BCD2C2 /* SystemConfiguration.framework in Frameworks */,
+				579C23331A22433100BCD2C2 /* Gimbal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +92,7 @@
 			children = (
 				574CDC231A21560500EEB5C2 /* Tadaima */,
 				574CDC3B1A21560500EEB5C2 /* TadaimaTests */,
+				579C23451A224B2300BCD2C2 /* Frameworks */,
 				574CDC221A21560500EEB5C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,8 +111,10 @@
 			children = (
 				574CDC261A21560500EEB5C2 /* AppDelegate.swift */,
 				574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */,
+				579C23341A22438100BCD2C2 /* GimbalManager.swift */,
 				574CDC281A21560500EEB5C2 /* FirstViewController.swift */,
 				574CDC2A1A21560500EEB5C2 /* SecondViewController.swift */,
+				579C23321A22433100BCD2C2 /* Gimbal.framework */,
 				574CDC2C1A21560500EEB5C2 /* Main.storyboard */,
 				574CDC2F1A21560500EEB5C2 /* Images.xcassets */,
 				574CDC311A21560500EEB5C2 /* LaunchScreen.xib */,
@@ -96,6 +126,7 @@
 		574CDC241A21560500EEB5C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				579C23361A2245BD00BCD2C2 /* Tadaima-Bridging-Header.h */,
 				574CDC251A21560500EEB5C2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -116,6 +147,20 @@
 				574CDC3D1A21560500EEB5C2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		579C23451A224B2300BCD2C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				579C23431A224AAC00BCD2C2 /* Security.framework */,
+				579C23411A224A9F00BCD2C2 /* MapKit.framework */,
+				579C233F1A224A9600BCD2C2 /* libz.dylib */,
+				579C233D1A224A8E00BCD2C2 /* CoreData.framework */,
+				579C233B1A224A8700BCD2C2 /* CoreLocation.framework */,
+				579C23391A224A7E00BCD2C2 /* CoreBluetooth.framework */,
+				579C23371A22492A00BCD2C2 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +266,7 @@
 				574CDC2B1A21560500EEB5C2 /* SecondViewController.swift in Sources */,
 				574CDC271A21560500EEB5C2 /* AppDelegate.swift in Sources */,
 				574CDC291A21560500EEB5C2 /* FirstViewController.swift in Sources */,
+				579C23351A22438100BCD2C2 /* GimbalManager.swift in Sources */,
 				574CDC491A21612E00EEB5C2 /* TadaimaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,9 +392,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tadaima",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Tadaima/Gimbal.framework/Headers",
+				);
 				INFOPLIST_FILE = Tadaima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tadaima-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -356,9 +412,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tadaima",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Tadaima/Gimbal.framework/Headers",
+				);
 				INFOPLIST_FILE = Tadaima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tadaima-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -415,6 +481,7 @@
 				574CDC441A21560500EEB5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		574CDC451A21560500EEB5C2 /* Build configuration list for PBXNativeTarget "TadaimaTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +490,7 @@
 				574CDC471A21560500EEB5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

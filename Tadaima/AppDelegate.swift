@@ -13,11 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var tadaimaManager : TadaimaManager?
+    var gimbalManager : GimbalManager?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         println("Application did finish launching.")
         tadaimaManager = TadaimaManager()
+        gimbalManager = GimbalManager()
+        
         return true
     }
 
