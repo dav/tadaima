@@ -14,6 +14,7 @@
 		574CDC301A21560500EEB5C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574CDC2F1A21560500EEB5C2 /* Images.xcassets */; };
 		574CDC331A21560500EEB5C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574CDC311A21560500EEB5C2 /* LaunchScreen.xib */; };
 		574CDC3F1A21560500EEB5C2 /* TadaimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDC3E1A21560500EEB5C2 /* TadaimaTests.swift */; };
+		574CDC491A21612E00EEB5C2 /* TadaimaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		574CDC381A21560500EEB5C2 /* TadaimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TadaimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		574CDC3D1A21560500EEB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		574CDC3E1A21560500EEB5C2 /* TadaimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TadaimaTests.swift; sourceTree = "<group>"; };
+		574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TadaimaManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				574CDC261A21560500EEB5C2 /* AppDelegate.swift */,
+				574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */,
 				574CDC281A21560500EEB5C2 /* FirstViewController.swift */,
 				574CDC2A1A21560500EEB5C2 /* SecondViewController.swift */,
 				574CDC2C1A21560500EEB5C2 /* Main.storyboard */,
@@ -218,6 +221,7 @@
 				574CDC2B1A21560500EEB5C2 /* SecondViewController.swift in Sources */,
 				574CDC271A21560500EEB5C2 /* AppDelegate.swift in Sources */,
 				574CDC291A21560500EEB5C2 /* FirstViewController.swift in Sources */,
+				574CDC491A21612E00EEB5C2 /* TadaimaManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
