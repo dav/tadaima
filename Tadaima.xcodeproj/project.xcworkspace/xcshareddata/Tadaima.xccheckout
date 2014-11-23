@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE43BE1B-04E4-47DC-87DA-60F9FCECAA8A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tadaima</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6308919C15D94C095C11ADA7175FBA768D75133B</key>
+		<string>github.com:dav/tadaima.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tadaima.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6308919C15D94C095C11ADA7175FBA768D75133B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:dav/tadaima.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6308919C15D94C095C11ADA7175FBA768D75133B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6308919C15D94C095C11ADA7175FBA768D75133B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Tadaima</string>
+		</dict>
+	</array>
+</dict>
+</plist>
