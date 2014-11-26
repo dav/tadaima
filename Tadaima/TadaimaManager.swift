@@ -4,16 +4,33 @@ import UIKit
 typealias stateChange = ((state: MCSessionState) -> ())?
 
 class TadaimaManager: NSObject, MCNearbyServiceBrowserDelegate, MCSessionDelegate {
+    struct Static {
+        static var sharedInstance: TadaimaManager?
+    }
+    
+    class var sharedInstance: TadaimaManager {
+        if Static.sharedInstance == nil {
+            Static.sharedInstance = TadaimaManager()
+        }
+        
+        return Static.sharedInstance!
+    }
+    
+    
     let localPeerID = MCPeerID(displayName: UIDevice.currentDevice().name)
     let browser: MCNearbyServiceBrowser?
     var session: MCSession?
     var onStateChange: stateChange?
-    var tadaimaUserName = "dav" // TODO : should be set from the interface
+    var tadaimaName: String?
     
     override init() {
         super.init()
         browser = MCNearbyServiceBrowser(peer: localPeerID, serviceType: "tadaima")
         browser!.delegate = self
+    }
+    
+    func ただいま(name: String) {
+        tadaimaName = name;
         browser!.startBrowsingForPeers()
         println("MC: Started browsing with \(browser)")
     }
@@ -27,8 +44,8 @@ extension TadaimaManager {
 
         session = MCSession(peer: localPeerID, securityIdentity: nil, encryptionPreference: .None)
         session!.delegate = self
-        println("MC: created session and inviting \(session)")
-        let userNameData = tadaimaUserName.dataUsingEncoding(NSUTF8StringEncoding)
+        println("MC: created session (as \(tadaimaName)) and inviting \(session)")
+        let userNameData = tadaimaName?.dataUsingEncoding(NSUTF8StringEncoding)
         browser!.invitePeer(peerID, toSession: session, withContext: userNameData, timeout: 0)
     }
     
