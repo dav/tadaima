@@ -1,11 +1,3 @@
-//
-//  FirstViewController.swift
-//  Tadaima
-//
-//  Created by Dav on 11/22/14.
-//  Copyright (c) 2014 Sekai No. All rights reserved.
-//
-
 import UIKit
 
 class FirstViewController: UIViewController {
