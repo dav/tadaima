@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CUSTOM_OPT_IN_FLOW</key>
+	<true/>
+	<key>FEATURE_DESCRIPTION</key>
+	<string>Lets your system know you have arrived.</string>
+	<key>FEATURE_NAME</key>
+	<string>Arrival Announcements</string>
+	<key>SHOW_DEBUG_PANELS</key>
+	<true/>
+	<key>PRODUCTION_API_KEY</key>
+	<string>7e823055-605c-4bb3-969b-19593a40f7ae</string>
+</dict>
+</plist>

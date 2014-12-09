@@ -6,7 +6,7 @@ class GimbalManager: NSObject, GMBLPlaceManagerDelegate {
     
     override init() {
         super.init()
-        Gimbal.setAPIKey("SOME API KEY", options: nil)
+        Gimbal.setAPIKey("SOME KEY", options: nil)
         println("GMBL: api init id=\(Gimbal.applicationInstanceIdentifier())")
         
         placeManager = GMBLPlaceManager()

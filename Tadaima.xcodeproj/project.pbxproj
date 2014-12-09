@@ -15,6 +15,8 @@
 		574CDC331A21560500EEB5C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574CDC311A21560500EEB5C2 /* LaunchScreen.xib */; };
 		574CDC3F1A21560500EEB5C2 /* TadaimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDC3E1A21560500EEB5C2 /* TadaimaTests.swift */; };
 		574CDC491A21612E00EEB5C2 /* TadaimaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */; };
+		576FFF6E1A27CB4F00921E62 /* UserContext.plist in Resources */ = {isa = PBXBuildFile; fileRef = 576FFF6D1A27CB4F00921E62 /* UserContext.plist */; };
+		576FFF701A27DFDD00921E62 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576FFF6F1A27DFDD00921E62 /* BeaconManager.swift */; };
 		579C23331A22433100BCD2C2 /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C23321A22433100BCD2C2 /* Gimbal.framework */; };
 		579C23351A22438100BCD2C2 /* GimbalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579C23341A22438100BCD2C2 /* GimbalManager.swift */; };
 		579C23381A22492A00BCD2C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C23371A22492A00BCD2C2 /* SystemConfiguration.framework */; };
@@ -49,6 +51,8 @@
 		574CDC3D1A21560500EEB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		574CDC3E1A21560500EEB5C2 /* TadaimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TadaimaTests.swift; sourceTree = "<group>"; };
 		574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TadaimaManager.swift; sourceTree = "<group>"; };
+		576FFF6D1A27CB4F00921E62 /* UserContext.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserContext.plist; sourceTree = "<group>"; };
+		576FFF6F1A27DFDD00921E62 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 		579C23321A22433100BCD2C2 /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gimbal.framework; sourceTree = "<group>"; };
 		579C23341A22438100BCD2C2 /* GimbalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalManager.swift; sourceTree = "<group>"; };
 		579C23361A2245BD00BCD2C2 /* Tadaima-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tadaima-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -111,6 +115,7 @@
 			children = (
 				574CDC261A21560500EEB5C2 /* AppDelegate.swift */,
 				574CDC481A21612E00EEB5C2 /* TadaimaManager.swift */,
+				576FFF6F1A27DFDD00921E62 /* BeaconManager.swift */,
 				579C23341A22438100BCD2C2 /* GimbalManager.swift */,
 				574CDC281A21560500EEB5C2 /* FirstViewController.swift */,
 				574CDC2A1A21560500EEB5C2 /* SecondViewController.swift */,
@@ -126,6 +131,7 @@
 		574CDC241A21560500EEB5C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				576FFF6D1A27CB4F00921E62 /* UserContext.plist */,
 				579C23361A2245BD00BCD2C2 /* Tadaima-Bridging-Header.h */,
 				574CDC251A21560500EEB5C2 /* Info.plist */,
 			);
@@ -246,6 +252,7 @@
 				574CDC2E1A21560500EEB5C2 /* Main.storyboard in Resources */,
 				574CDC331A21560500EEB5C2 /* LaunchScreen.xib in Resources */,
 				574CDC301A21560500EEB5C2 /* Images.xcassets in Resources */,
+				576FFF6E1A27CB4F00921E62 /* UserContext.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +273,7 @@
 				574CDC2B1A21560500EEB5C2 /* SecondViewController.swift in Sources */,
 				574CDC271A21560500EEB5C2 /* AppDelegate.swift in Sources */,
 				574CDC291A21560500EEB5C2 /* FirstViewController.swift in Sources */,
+				576FFF701A27DFDD00921E62 /* BeaconManager.swift in Sources */,
 				579C23351A22438100BCD2C2 /* GimbalManager.swift in Sources */,
 				574CDC491A21612E00EEB5C2 /* TadaimaManager.swift in Sources */,
 			);
@@ -402,6 +410,7 @@
 					"$(PROJECT_DIR)/Tadaima/Gimbal.framework/Headers",
 				);
 				INFOPLIST_FILE = Tadaima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tadaima-Bridging-Header.h";
@@ -422,6 +431,7 @@
 					"$(PROJECT_DIR)/Tadaima/Gimbal.framework/Headers",
 				);
 				INFOPLIST_FILE = Tadaima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tadaima-Bridging-Header.h";

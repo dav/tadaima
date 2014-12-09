@@ -12,13 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var gimbalManager : GimbalManager!
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         println("Application did finish launching.")
-        gimbalManager = GimbalManager()
         
+        BeaconManager.sharedInstance.scanForBeacons(self)
         return true
     }
 
